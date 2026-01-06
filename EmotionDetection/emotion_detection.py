@@ -4,7 +4,7 @@ import requests
 import os
 
 def emotion_detector(text_to_analyze):
-    URL = 'http://" + os.getenv("API_URI") + "/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
+    URL = 'http://' + os.getenv("API_URI") + '/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
     Headers = {
         "grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock",
         "Content-Type": "application/json"
